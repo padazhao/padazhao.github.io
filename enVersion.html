@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pada Zhao</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container h1{
+            color: #77aaff;
+        }
+        .container p{
+            color: #77aaff;
+        }
+        .container {
+
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+        .right{
+            display: flex;
+            align-items: center;
+        }
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+
+            object-fit: cover;
+        }
+        header {
+
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            min-height: 70px;
+            border-bottom: #77aaff 4px solid;
+
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+
+            transition: filter 0.3s ease; /* 设置过渡效果，使高亮更加平滑 */
+        }
+        header a:hover{
+            font-size: 16px;
+            filter: brightness(150%); /* 增加亮度到150% */
+
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .showcase {
+            min-height: 400px;
+
+            text-align: center;
+            color: #fff;
+            padding-top: 100px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        .showcase h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .showcase p {
+            font-size: 18px;
+        }
+        .content-section {
+            margin: 40px 0;
+        }
+        h2 {
+            color: #333;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #77aaff;
+            font-size: 26px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item a {
+            color: blue; /* 初始文本颜色 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 18px;
+            transition: filter 0.3s ease; /* 设置过渡效果，使高亮更加平滑 */
+        }
+
+        /* 鼠标悬浮时的样式 */
+        .education-item a:hover {
+            font-size: 20px;
+            filter: brightness(150%); /* 增加亮度到150% */
+        }
+
+
+        .education-item h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .education-item .date {
+            float: right;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .education-item p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .skills, .projects, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .skills div, .projects div, .contact div {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .skills div p, .projects div p, .contact div p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #77aaff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #5599ee;
+        }
+        @media (max-width: 768px) {
+            .skills div, .projects div, .contact div {
+                width: 100%;
+            }
+            header ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+
+        <div class="right">
+            <h1>Pada Zhao</h1>
+
+            <img src="images/you.jpg" alt="Pada" class = "profile-photo">
+        </div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+
+</header>
+
+<section class="showcase">
+    <div class="container">
+        <h1>Welcome to Pada's  Webpage</h1>
+        <p>Let life be beautiful like summer flowers and death like autumn leaves.</p>
+    </div>
+</section>
+
+<section class="container content-section" id="about">
+    <h2>About Me</h2>
+    <div class="education-item">
+        <h3><a href="https://www.xjtlu.edu.cn/en/study/masters/msc-applied-informatics" target="_blank">University of Liverpool</a> - Master of Science in Applied Informatics</h3>
+        <span class="date">Sep 2022 - Mar 2024</span>
+        <p>Courses: Research Methods, Interactive Systems, Fundamentals of Machine Learning,
+            Data Mining and Big Data Analytics, Social Web Programming, Social Network Analysis,
+            Software Architectures, Technological Project Management.</p>
+    </div>
+    <div class="education-item">
+        <h3><a href="https://www.xjtlu.edu.cn/en/study/undergraduate/information-and-computing-science" target="_blank">Xi'an Jiaotong-Liverpool University</a> - Bachelor of Science in Information and Computing Science</h3>
+        <span class="date">Sep 2017 - Jul 2021</span>
+        <p>Courses: Computer Systems, Databases, Programming in Java, Discrete Mathematics and Statistics
+            Algorithmic Foundations and Problem Solving, Data Structures, Operating Systems Concepts, Artificial Intelligence,
+            Decision Computation and Language, Networking, Software Engineering, Computer Graphics,
+            Complexity of Algorithms, Advanced OO Programming, Human-Centric Computing, Mobile Computing,
+            Big Data Analytics, Multi-Agent System, Principles of Computer Games Design.</p>
+    </div>
+</section>
+
+<section class="container content-section" id="work-experience">
+    <h2>Work Experience</h2>
+    <div class="work-item">
+        <h3>Teaching Assistant - </h3>
+    </div>
+</section>
+
+<section class="container content-section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Skill 4</li>
+                <li>Skill 5</li>
+                <li>Skill 6</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="container content-section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div>
+            <p><strong>Project 1</strong></p>
+            <a href="https://project-link1.com" target="_blank">View Project</a>
+        </div>
+        <div>
+            <p><strong>Project 2</strong></p>
+            <a href="https://project-link2.com" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section class="container content-section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+        <div>
+            <p>Email: padazhao@163.com</p>
+            <p>Phone: +86 18510951815</p>
+            <p>WeChat: 18510951815</p>
+        </div>
+        <div>
+            <a class="download-btn" href="files/Uol_MSc Applied Informatics_ Xin Zhao.pdf" download>Download My Resume</a>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p style="text-align: center;">&copy; 2024 Pada Zhao</p>
+</footer>
+</body>
+</html>
