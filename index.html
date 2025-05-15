@@ -1,279 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pada Zhao</title>
+  <title>赵鑫</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+    * {
       margin: 0;
       padding: 0;
-      color: #333;
-      line-height: 1.6;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
     }
-    .container h1{
-      color: #77aaff;
-    }
-    .container p{
-      color: #77aaff;
-    }
-    .container {
 
-      width: 90%;
-      max-width: 1200px;
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 800px;
       margin: 0 auto;
       padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
+    header {
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 2px solid #eee;
     }
-    .right{
-      display: flex;
-      align-items: center;
-    }
-    .profile-photo {
-      width: 100px;
+
+    .avatar {
+      width: 70px;
       height: 100px;
 
-      object-fit: cover;
+      margin-bottom: 10px;
     }
-    header {
 
-      background: #333;
-      color: #fff;
+    section {
       padding: 20px 0;
-      min-height: 70px;
-      border-bottom: #77aaff 4px solid;
+      border-bottom: 1px solid #eee;
+    }
 
-    }
-    header a {
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 14px;
-
-      transition: filter 0.3s ease; /* 设置过渡效果，使高亮更加平滑 */
-    }
-    header a:hover{
-      font-size: 16px;
-      filter: brightness(150%); /* 增加亮度到150% */
-
-    }
-    header ul {
-      padding: 0;
-      list-style: none;
-    }
-    header ul li {
-      display: inline-block;
-      margin: 0 15px;
-    }
-    .showcase {
-      min-height: 400px;
-
-      text-align: center;
-      color: #fff;
-      padding-top: 100px;
-      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
-    }
-    .showcase h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-    .showcase p {
-      font-size: 18px;
-    }
-    .content-section {
-      margin: 40px 0;
-    }
     h2 {
-      color: #333;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #77aaff;
-      font-size: 26px;
+      color: #2c3e50;
+      margin-bottom: 15px;
     }
 
+    .experience-item,
     .education-item {
       margin-bottom: 20px;
     }
 
-    .education-item a {
-      color: blue; /* 初始文本颜色 */
-      text-decoration: none; /* 去掉下划线 */
-      font-size: 18px;
-      transition: filter 0.3s ease; /* 设置过渡效果，使高亮更加平滑 */
-    }
-
-    /* 鼠标悬浮时的样式 */
-    .education-item a:hover {
-      font-size: 20px;
-      filter: brightness(150%); /* 增加亮度到150% */
-    }
-
-
-    .education-item h3 {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .education-item .date {
-      float: right;
-      font-weight: normal;
-      font-style: italic;
-      font-size: 14px;
-    }
-
-    .education-item p {
-      margin: 5px 0 0;
-      font-size: 14px;
-    }
-
-    .skills, .projects, .contact {
+    .skills {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 20px 0;
+      gap: 10px;
     }
-    .skills div, .projects div, .contact div {
-      width: 48%;
-      margin-bottom: 20px;
-    }
-    .skills div p, .projects div p, .contact div p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-    .download-btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #77aaff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 16px;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
-    .download-btn:hover {
-      background-color: #5599ee;
-    }
-    @media (max-width: 768px) {
-      .skills div, .projects div, .contact div {
-        width: 100%;
-      }
-      header ul li {
-        display: block;
-        margin: 10px 0;
-      }
+
+    .skill-tag {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-<header>
-  <div class="container">
+<div class="container">
+  <header>
+    <img src="images/pada.jpg" alt="赵鑫的照片" class="avatar">
+    <h1>赵鑫</h1>
+    <p>  padazhao@163.com | (+86)18510951815 </p>
+  </header>
 
-    <div class="right">
-      <h1>Pada Zhao</h1>
+  <section id="education">
+    <h2>教育背景</h2>
+    <div class="education-item">
+      <h3>应用信息学 硕士</h3>
+      <p>英国利物浦大学（2022.09-2024.03）</p>
+      <p>专业课程：研究方法，数据挖掘和大数据分析，软件架构，技术项目管理，交互系统，机器学习基础，
+        社交网络编程，社交网络分析。
+      </p>
+      <p>GPA: 3.5/4.0</p>
+    </div>
+    <div class="education-item">
+      <h3>信息与计算科学 学士</h3>
+      <p>西交利物浦大学（2017.09-2021.07）</p>
+      <p>专业课程：计算机系统，数据结构，数据库概论，操作系统概念，离散数学与统计，Java编程，算法基础及问题求解，
+        人工智能，计算机网络，软件工程团队项目，软件工程 I，高级面向对象编程，人机交互，决策、计算和语言，算法复杂性
+        ，计算机图形学，软件工程II，大数据分析，移动计算，多智能体系统，电脑游戏设计原理，机器学习。
+      </p>
+      <p>GPA: 3.4/4.0</p>
+    </div>
+  </section>
 
-      <img src="images/you.jpg" alt="Pada" class = "profile-photo">
+  <section id="projects">
+    <h2>项目经历</h2>
+    <div class="project-item">
+      <h3>区块链驱动的人工智能训练数据集数据交易（硕士毕设）
+      </h3>
+      <p>基于以太坊使用 Solidity 编写的智能合约执行数据交易，通过 IPFS 上传加密的人工智能训练数据，然后利用区块链进行数据挂牌及交易。针对交易中的争议仲裁，通过大语言模型 ChatGPT、
+        Google Bard 建立一个数据仲裁Agent智能体进行数据验证，
+        将数据描述与数据内容进行相似度自动判断，确保回到区块链智能合约中给出可靠的仲裁结果。
+      </p>
+      <p>项目链接：<a href="#">https://github.com/padazhao/FMP</a></p>
+    </div>
+    <div class="project-item">
+      <h3>硕士招生系统
+      </h3>
+      <p>硕士招生系统的架构设计遵循标准的三层架构模型，包括表示层、服务层和持久层。它使用 SpringBoot 作为框架，Hibernate 作为对象关系映射 (ORM)，Thymeleaf 作为模板引擎。该系统遵循模型视图控制器 (MVC) 模式，用于以分离关注点的方式组织代码，并提高可维护性和可扩展性。
+        视图组件使用 Thymeleaf 作为模板引擎来渲染 HTML 页面。控制器组件处理 HTTP 请求并将其映射到相应的控制器和方法。控制器层处理用户请求和 RESTful 端点，以接受并处理客户端请求。它将请求发送到相应的服务进行处理，并协调业务逻辑流。RestController 类还负责在处理完成后将响应返回到视图。
+      </p>
+      <p>项目链接：<a href="#">https://github.com/padazhao/msc_admission_system</a></p>
+    </div>
+    <div class="project-item">
+      <h3>基于视频切片中孔板颜色值的变化对生物芯片数据进行分类（本科毕设）
+
+      </h3>
+      <p>通过在移动端构建一个安卓应用程序，将生物实验的抗生素随时间变化的视频放入其中，然后该应用将视频进行切片变成几帧图片，接着通过图像识别将各个孔板中的
+        RGB值进行计算，以每个孔板中RGB平均值代表这个孔板，接着使用机器学习分类算法归纳孔板中颜色点值变化对抗生素种类进
+        行分类。并且在最后将信息可视化再使用 XAI 解释最后的结果的选择过程逻辑。
+      </p>
+      <p>项目链接：<a href="#">https://github.com/padazhao/Final_Year_Project_for_biochips_video_captures</a></p>
+    </div>
+    <div class="project-item">
+      <h3>时间管理大师
+
+      </h3>
+      <p>在本项目中，团队设计了一个个人日历，实现了日期查看、
+        日程安排制作以及方便个人时间管理的功能。根据市场调研，
+        大多数安卓时间管理应用程序都实现了基本的日历功能，包括日期显示
+        、节日提醒以及一些日程模板，例如日程表、生日、周年纪念日、倒计时等。
+        此外，考虑到用户需求的广泛性，本项目面向所有使用安卓智能手机的用户设计
+        。基于研究成果，本项目提出了一些卓越的功能，包括改善可编辑性，提升可视化水平
+        ，并根据用户选择提供更多定制服务。
+      </p>
+      <p>项目链接：<a href="#">https://gitee.com/master-of-time-management</a></p>
     </div>
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work-experience">Work Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  </section>
 
-  </div>
-
-</header>
-
-<section class="showcase">
-  <div class="container">
-    <h1>Welcome to Pada's  Webpage</h1>
-    <p>Let life be beautiful like summer flowers and death like autumn leaves.</p>
-  </div>
-</section>
-
-<section class="container content-section" id="about">
-  <h2>About Me</h2>
-  <div class="education-item">
-    <h3><a href="https://www.xjtlu.edu.cn/en/study/masters/msc-applied-informatics" target="_blank">University of Liverpool</a> - Master of Science in Applied Informatics</h3>
-    <span class="date">Sep 2022 - Mar 2024</span>
-    <p>Courses: Research Methods, Interactive Systems, Fundamentals of Machine Learning,
-      Data Mining and Big Data Analytics, Social Web Programming, Social Network Analysis,
-      Software Architectures, Technological Project Management.</p>
-  </div>
-  <div class="education-item">
-    <h3><a href="https://www.xjtlu.edu.cn/en/study/undergraduate/information-and-computing-science" target="_blank">Xi'an Jiaotong-Liverpool University</a> - Bachelor of Science in Information and Computing Science</h3>
-    <span class="date">Sep 2017 - Jul 2021</span>
-    <p>Courses: Computer Systems, Databases, Programming in Java, Discrete Mathematics and Statistics
-    Algorithmic Foundations and Problem Solving, Data Structures, Operating Systems Concepts, Artificial Intelligence,
-    Decision Computation and Language, Networking, Software Engineering, Computer Graphics,
-    Complexity of Algorithms, Advanced OO Programming, Human-Centric Computing, Mobile Computing,
-    Big Data Analytics, Multi-Agent System, Principles of Computer Games Design.</p>
-  </div>
-</section>
-
-<section class="container content-section" id="work-experience">
-  <h2>Work Experience</h2>
-  <div class="work-item">
-    <h3>Teaching Assistant - </h3>
-  </div>
-</section>
-
-<section class="container content-section" id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div>
+  <section id="experience">
+    <h2>工作经历</h2>
+    <div class="experience-item">
+      <h3>西交利物浦大学 - 电子商务技术课程助教（2023.02 - 2023.05）</h3>
       <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
+        <li>协助教授完成电子商务技术课程的代码教学工作，辅导学生完成与课程相关的 PHP 代码。</li>
+        <li>通过及时反馈，帮助学生提高编程能力和团队协作能力。</li>
+        <li>检查学生的代码作业情况，给出相应的作业的评估，辅导学生进行学习。</li>
       </ul>
     </div>
-    <div>
+
+    <div class="experience-item">
+      <h3>西交利物浦大学 - 数据结构课程助教（2023.02 - 2023.04）</h3>
       <ul>
-        <li>Skill 4</li>
-        <li>Skill 5</li>
-        <li>Skill 6</li>
+        <li>协助教授完成数据结构课程的代码教学工作，辅导学生完成与课程相关的 Java 代码。</li>
+        <li>解答学生对于数据结构相关代码的问题。</li>
+        <li>帮助学生理解各种数据结构的代码实现问题。</li>
       </ul>
     </div>
-  </div>
-</section>
 
-<section class="container content-section" id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div>
-      <p><strong>Project 1</strong></p>
-      <a href="https://project-link1.com" target="_blank">View Project</a>
+    <div class="experience-item">
+      <h3>苏州德融嘉信信用管理技术股份有限公司 - 项目经理助理（2021.09 - 2021.10）</h3>
+      <ul>
+        <li>参与并协助项目经理进行项目管理，包括项目计划、进度跟踪、风险控制等工作。</li>
+        <li>负责项目文档的整理和编写，记录会议纪要。</li>
+        <li>协调项目团队成员之间的工作，解决项目过程中遇到的问题，跟踪和监控项目进展，并及时向项目经
+          理汇报。</li>
+        <li>
+          成功协助管理了三个子项目，保证了 100% 的项目按时交付。
+        </li>
+      </ul>
     </div>
-    <div>
-      <p><strong>Project 2</strong></p>
-      <a href="https://project-link2.com" target="_blank">View Project</a>
-    </div>
-  </div>
-</section>
 
-<section class="container content-section" id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact">
-    <div>
-      <p>Email: padazhao@163.com</p>
-      <p>Phone: +86 18510951815</p>
-      <p>WeChat: 18510951815</p>
+    <div class="experience-item">
+      <h3>达闼机器人股份有限公司 - 数据标注实习生（2020.07 - 2020.09）</h3>
+      <ul>
+        <li>参与公司云端售货机器项目的视觉识别算法数据训练，帮助算法工程师获取高质量的标注训练数据。</li>
+        <li>发现并记录算法识别结果的错误和问题，为算法优化和评估提供重要依据。</li>
+        <li>负责相关算法结果测试和协助测试工程师进行测试，并向团队反映相关问题。
+        </li>
+        <li>
+          提高了标注数据的质量，提升了算法团队的效率。
+        </li>
+      </ul>
     </div>
-    <div>
-      <a class="download-btn" href="files/Uol_MSc Applied Informatics_ Xin Zhao.pdf" download>Download My Resume</a>
-    </div>
-  </div>
-</section>
+
+  </section>
 
 
+
+  <section id="skills">
+    <h2>技能</h2>
+    <div class="skills">
+    <h3>编程能力</h3>：
+        <p>熟练使用 Java, Python，Spring Boot，Hibernate，Spring MVC，Mybatis，Thymeleaf，
+            HTML，CSS，JavaScript，MySQL，RESTful AP，面向对象设计，Scrum 方法论</p>
+     <h3>语言能力：</h3>
+        <p> 熟练使用英语交流沟通（本科和研究生均为英文授课）</p>。
+
+    </div>
+  </section>
+
+
+
+  <section id="about">
+    <h2>自我评价</h2>
+    <p>热爱编程，喜欢挑战技术难题，具有良好的团队合作和沟通能力。在项目中注重细节，不断学习和提升自己的技能。</p>
+  </section>
+</div>
 <footer>
-  <p style="text-align: center;">&copy; 2024 Pada Zhao</p>
+    <p style="text-align: center;">&copy; 2025 Pada Zhao</p>
 </footer>
 </body>
 </html>
