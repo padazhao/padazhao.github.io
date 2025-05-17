@@ -67,6 +67,14 @@
       border-radius: 20px;
       font-size: 0.9em;
     }
+    .lang-button {
+      position: absolute;
+      top: 20px;
+      right: 170px;
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -75,6 +83,7 @@
     <img src="images/pada.jpg" alt="赵鑫的照片" class="avatar">
     <h1>赵鑫</h1>
     <p>  padazhao@163.com | (+86)18510951815 </p>
+    <button  class="lang-button" title="Switch to English Version" onclick="window.location.href='enVersion.html'">EN</button>
   </header>
 
   <section id="education">
@@ -197,11 +206,20 @@
   <section id="skills">
     <h2>技能</h2>
     <div class="skills">
-    <h3>编程能力</h3>：
+      <ul>
+      <li><h3>编程能力：</h3>
         <p>熟练使用 Java, Python，Spring Boot，Hibernate，Spring MVC，Mybatis，Thymeleaf，
-            HTML，CSS，JavaScript，MySQL，RESTful AP，面向对象设计，Scrum 方法论</p>
-     <h3>语言能力：</h3>
-        <p> 熟练使用英语交流沟通（本科和研究生均为英文授课）</p>。
+          HTML，CSS，JavaScript，MySQL，RESTful AP，面向对象设计，Scrum 方法论。 </p>
+
+      </li>
+        <li>
+          <h3>语言能力：</h3>
+          <p>熟练使用英语交流沟通（本科和研究生均为英文授课）。</p>
+        </li>
+      </ul>
+
+
+
 
     </div>
   </section>
